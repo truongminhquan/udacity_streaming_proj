@@ -57,7 +57,6 @@ class Turnstile(Producer):
         # of entries that were calculated
         #
         #
-        print(self.topic_name)
         for _ in range(num_entries):
             self.producer.produce(
                 topic=self.topic_name,

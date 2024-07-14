@@ -42,7 +42,7 @@ class KafkaConsumer:
                 "default.topic.config": 
                 {
                     "acks": "all", 
-                    "auto.offset.reset" : "earliest"
+                    "auto.offset.reset": "earliest" if offset_earliest else "latest"
                 }
         }
 
